@@ -3,25 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="styleContact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
 
   <body>
-    <div class="container">
-      <h1>Contacteer Level 28</h1>
-      <form action="submit.php" method="post">
-        <label for="name">Naam:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Bericht:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Verzenden</button>
+    <header>
+      <div class="logo">Level28</div>
+      <form class="search-bar" action="#" method="get">
+        <input type="text" placeholder="Search..." name="search" />
+        <button type="submit">Search</button>
       </form>
-    </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="listOfAI.html">List of AI</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </header>
+
+    <body>
+      <div class="container">
+        <h1>Contacteer Level28</h1>
+        <form id="contactForm" action="submit.php" method="post">
+          <label for="name">Naam:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Verzenden</button>
+        </form>
+      </div>
+    </body>
+
+    <footer>
+      <div class="footer-content">
+        &copy; 2024 AI Website. All rights reserved. Teamvaardigheden 2023 -
+        2024
+      </div>
+    </footer>
   </body>
 </html>
