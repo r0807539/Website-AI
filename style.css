@@ -111,3 +111,27 @@ footer {
 .footer-content {
   font-size: 0.9em;
 }
+section {
+  padding: 5rem;
+  background-color: white;
+}
+.title {
+  text-align: center;
+  padding: 5.75rem 0rem;
+  background-color: #a9d6e5;
+  font-size: 10rem;
+  color: #ffc101;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h1 {
+  font-size: 10rem;
+}
+main * {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+}
