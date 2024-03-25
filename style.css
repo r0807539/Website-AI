@@ -124,11 +124,12 @@ footer {
 #Geschiedenis {
   padding: 5rem;
   background-color: white;
+  margin: 4rem;
 }
 
 .title {
   text-align: center;
-  padding: 5.75rem 0rem;
+  padding: 5.7rem 0rem;
   background-color: #a9d6e5;
   font-size: 10rem;
   color: #ffc101;
