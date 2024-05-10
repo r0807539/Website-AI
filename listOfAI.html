@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="Scripts/script.js" type="module"></script>
     <title>AI aanbod</title>
   </head>
 
@@ -29,48 +30,85 @@
     <main>
       <section class="containerLijstAI">
         <h1 id="h1List">AI-aanbod</h1>
+        <h2 class="h2list">Our highlighted AI</h2>
+        <div id="highlightedAI">
+          <img
+            class="AI-photo"
+            loading="lazy"
+            src="Images/ChatGPT.png"
+            alt="Logo van ChatGPT"
+          />
+          <div class="AI-desc">
+            <h3>ChatGPT</h3>
+            <p class="sorttext">Algemeen</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Recusandae, fugit asperiores! Rerum, dicta sapiente sed nam
+              necessitatibus corrupti ut deleniti rem possimus, odit, quasi
+              repellat eveniet. Mollitia inventore alias neque, quasi natus
+              magni suscipit, et minus id consequuntur, excepturi ut voluptatum
+              similique quos deleniti reprehenderit? Accusantium molestiae culpa
+              esse neque.
+            </p>
+          </div>
+        </div>
         <h2 class="h2List">Filter</h2>
         <form class="soorten">
-          <label class="algemeen"
+          <label class="Algemeen"
             ><input
               type="checkbox"
               name="soort"
-              value="algemeen"
+              value="Algemeen"
               checked
             />Algemeen</label
           >
-          <label class="excel"
+          <label class="Word"
             ><input
               type="checkbox"
               name="soort"
-              value="excel"
+              value="Word"
+              checked
+            />Word</label
+          >
+          <label class="Excel"
+            ><input
+              type="checkbox"
+              name="soort"
+              value="Excel"
               checked
             />Excel</label
           >
-          <label class="spelling"
+          <label class="PowerPoint"
             ><input
               type="checkbox"
               name="soort"
-              value="spelling"
+              value="PowerPoint"
+              checked
+            />PowerPoint</label
+          >
+          <label class="Financiëel"
+            ><input
+              type="checkbox"
+              name="soort"
+              value="Financiëel"
+              checked
+            />Financiëel</label
+          >
+          <label class="IT"
+            ><input type="checkbox" name="soort" value="IT" checked />IT</label
+          >
+          <label class="Spelling"
+            ><input
+              type="checkbox"
+              name="soort"
+              value="Spelling"
               checked
             />Spelling</label
           >
-          <label class="weervoorspelling"
-            ><input
-              type="checkbox"
-              name="soort"
-              value="weervoorspelling"
-              checked
-            />Weervoorspelling</label
-          >
         </form>
         <h2 class="h2List">AI lijst</h2>
-        <ul>
-          <li>AI 1</li>
-          <li>AI 2</li>
-          <li>AI 3</li>
-          <li>...</li>
-        </ul>
+        <p id="aantal"></p>
+        <section class="list"></section>
       </section>
     </main>
     <footer>
