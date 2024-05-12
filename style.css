@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -254,4 +255,169 @@ button:hover {
 textarea {
   resize: none;
   height: 10rem;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .social-icons {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .search-bar {
+    max-width: 250px;
+  }
+
+  .search-bar button {
+    padding: 6px 12px;
+  }
+
+  .footer-content {
+    font-size: 0.8em;
+  }
+
+  #contentHome {
+    margin: 100px auto; /* TODO: verticaal centreren */
+  }
+
+  #Geschiedenis {
+    padding: 5rem;
+  }
+
+  .title {
+    padding: 4rem 0;
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* For smaller devices such as mobile phones */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .search-bar {
+    max-width: 250px;
+  }
+
+  .search-bar button {
+    padding: 6px 12px;
+  }
+
+  .social-icons {
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+
+  .footer-content {
+    font-size: 0.7em;
+  }
+
+  #contentHome {
+    margin: 50px auto;
+  }
+
+  #Geschiedenis {
+    padding: 2rem;
+  }
+
+  .title {
+    padding: 2rem 0;
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    max-width: 300px;
+    margin: 30px auto;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2em;
+  }
 }

@@ -48,3 +48,5 @@ function voegAIToeBijLijst(AI) {
 }
 
 AIPrograms.forEach(voegAIToeBijLijst)
+
+
